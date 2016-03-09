@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="container">
+		<div class="container"></div>
+			<h1>Welcome to the Amusement Park!</h1>
+			<div>
+				<% unless logged_in? %>
+					<%= link_to "Sign in", signin_path %>
+					<%= link_to "Sign up", new_user_path %>
+				<% end %>
+			</div>
+		</div>
+		<div>
+			<img src="http://www.washingtonpost.com/wp-srv/special/health/why-roller-coasters-make-us-scream/images/rollercoasterBackground.jpg" width="550" height="325">
+		</div>
+	</div>
+</div>
