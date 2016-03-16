@@ -35,10 +35,4 @@ class UsersController < ApplicationController
 		@user = User.find(params[:id])
 	end
 
-	def authenticate_user!
-		redirect_to root_path, alert: "You must be logged in to view that page" unless logged_in?
-	end
-
-
-
 end
